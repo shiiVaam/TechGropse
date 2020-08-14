@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="SectionHeaderView" customModule="Event_Detail_Demo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="wpS-II-0dN">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="48"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="48" id="Dnp-av-CXO"/>
+                    </constraints>
+                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="UY3-j5-004">
+                        <size key="itemSize" width="50" height="50"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                    <connections>
+                        <outlet property="dataSource" destination="iN0-l3-epB" id="9Ul-pw-iZY"/>
+                        <outlet property="delegate" destination="iN0-l3-epB" id="LC1-Uz-wau"/>
+                    </connections>
+                </collectionView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NfP-4C-mOO">
+                    <rect key="frame" x="0.0" y="48" width="414" height="1"/>
+                    <color key="backgroundColor" red="0.8784313725490196" green="0.8784313725490196" blue="0.8784313725490196" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="PjV-DL-lBB"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="NfP-4C-mOO" firstAttribute="top" secondItem="wpS-II-0dN" secondAttribute="bottom" id="0Pn-T3-W0G"/>
+                <constraint firstAttribute="trailing" secondItem="NfP-4C-mOO" secondAttribute="trailing" id="94c-NV-SGs"/>
+                <constraint firstAttribute="trailing" secondItem="wpS-II-0dN" secondAttribute="trailing" id="B4h-49-sED"/>
+                <constraint firstAttribute="bottom" secondItem="NfP-4C-mOO" secondAttribute="bottom" priority="999" id="MV9-yD-0el"/>
+                <constraint firstItem="wpS-II-0dN" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="aLY-hY-GXG"/>
+                <constraint firstItem="wpS-II-0dN" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="eFO-Md-4MI"/>
+                <constraint firstItem="NfP-4C-mOO" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="izY-t2-qRI"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="carouselCv" destination="wpS-II-0dN" id="LKg-zu-vVZ"/>
+            </connections>
+            <point key="canvasLocation" x="139" y="85"/>
+        </view>
+    </objects>
+</document>

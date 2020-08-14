@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ViewEventCell" rowHeight="230" id="o4N-h8-LUE" customClass="ViewEventCell" customModule="Event_Detail_Demo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="466" height="230"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="o4N-h8-LUE" id="PB1-iu-gN3">
+                <rect key="frame" x="0.0" y="0.0" width="466" height="230"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iJw-jI-6ZP">
+                        <rect key="frame" x="15" y="20" width="436" height="210"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="View event organizer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oLy-TY-rfc">
+                                <rect key="frame" x="10" y="15" width="160" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="HQK-Wj-HUc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E6N-tC-IVw">
+                                <rect key="frame" x="396" y="21" width="30" height="38"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <state key="normal" title="+">
+                                    <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="qZp-0W-WcQ">
+                                <rect key="frame" x="10" y="80" width="416" height="100"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="ivl-c0-qKS"/>
+                                </constraints>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="4Ji-t3-LJZ">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="qZp-0W-WcQ" firstAttribute="leading" secondItem="iJw-jI-6ZP" secondAttribute="leading" constant="10" id="5wa-Co-8GA"/>
+                            <constraint firstAttribute="trailing" secondItem="E6N-tC-IVw" secondAttribute="trailing" constant="10" id="Jot-6x-neM"/>
+                            <constraint firstAttribute="trailing" secondItem="qZp-0W-WcQ" secondAttribute="trailing" constant="10" id="LUT-2J-RTA"/>
+                            <constraint firstItem="oLy-TY-rfc" firstAttribute="leading" secondItem="iJw-jI-6ZP" secondAttribute="leading" constant="10" id="Lf8-nT-hIE"/>
+                            <constraint firstItem="qZp-0W-WcQ" firstAttribute="top" secondItem="oLy-TY-rfc" secondAttribute="bottom" constant="15" id="dZQ-Oq-jbs"/>
+                            <constraint firstItem="oLy-TY-rfc" firstAttribute="top" secondItem="iJw-jI-6ZP" secondAttribute="top" constant="15" id="l4W-Mp-bnc"/>
+                            <constraint firstItem="E6N-tC-IVw" firstAttribute="centerY" secondItem="oLy-TY-rfc" secondAttribute="centerY" id="wxP-w6-j1u"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="10"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.14999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
+                <constraints>
+                    <constraint firstItem="iJw-jI-6ZP" firstAttribute="leading" secondItem="PB1-iu-gN3" secondAttribute="leading" constant="15" id="2rG-eF-Dtw"/>
+                    <constraint firstItem="iJw-jI-6ZP" firstAttribute="top" secondItem="PB1-iu-gN3" secondAttribute="top" constant="20" id="AO7-Cp-pSD"/>
+                    <constraint firstAttribute="trailing" secondItem="iJw-jI-6ZP" secondAttribute="trailing" constant="15" id="j5e-P0-8n5"/>
+                    <constraint firstAttribute="bottom" secondItem="iJw-jI-6ZP" secondAttribute="bottom" id="ta8-q5-4rM"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="btnExpand" destination="E6N-tC-IVw" id="IL4-qI-94W"/>
+                <outlet property="colViewEvView" destination="qZp-0W-WcQ" id="Y6E-0J-Mgy"/>
+                <outlet property="lblEvView" destination="oLy-TY-rfc" id="XgV-O7-RKV"/>
+            </connections>
+            <point key="canvasLocation" x="114.49275362318842" y="89.732142857142847"/>
+        </tableViewCell>
+    </objects>
+</document>

@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="BasicEventDetCell" rowHeight="160" id="MK3-Th-kHa" customClass="BasicEventDetCell" customModule="Event_Detail_Demo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="381" height="210"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="MK3-Th-kHa" id="2DD-6v-KfS">
+                <rect key="frame" x="0.0" y="0.0" width="381" height="210"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MQg-wD-gVg">
+                        <rect key="frame" x="15" y="20" width="351" height="190"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="KVZ-Hc-HTc">
+                                <rect key="frame" x="10" y="15" width="201.5" height="20"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="calender_icon" translatesAutoresizingMaskIntoConstraints="NO" id="lRc-Lg-0uD">
+                                        <rect key="frame" x="0.0" y="0.0" width="20" height="20"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="20" id="Dy0-N7-l9f"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="27 Mar 2019 - 29 Mar 2019" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fmz-h9-lQl">
+                                        <rect key="frame" x="25" y="0.0" width="176.5" height="20"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="WBo-n8-B0g"/>
+                                </constraints>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="5ML-Pa-eHR">
+                                <rect key="frame" x="10" y="50" width="116" height="20"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="color_clock_icon" translatesAutoresizingMaskIntoConstraints="NO" id="cnM-Y8-ej3">
+                                        <rect key="frame" x="0.0" y="0.0" width="20" height="20"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="20" id="gyO-hE-In7"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10:45 - 16: 45" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fIe-ES-NUM">
+                                        <rect key="frame" x="25" y="0.0" width="91" height="20"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="hxa-cK-60M"/>
+                                </constraints>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="10V-ta-2Pe">
+                                <rect key="frame" x="10" y="85" width="116" height="20"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="language_icon" translatesAutoresizingMaskIntoConstraints="NO" id="YBc-FA-w2m">
+                                        <rect key="frame" x="0.0" y="0.0" width="20" height="20"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="20" id="2eH-Nq-Uug"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Arabic &amp; Urdu" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ndU-So-xTx">
+                                        <rect key="frame" x="25" y="0.0" width="91" height="20"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="vLv-G3-Dyg"/>
+                                </constraints>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="LtA-1s-EAr">
+                                <rect key="frame" x="10" y="120" width="117" height="20"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="unisex_icon" translatesAutoresizingMaskIntoConstraints="NO" id="aqo-wg-5fH">
+                                        <rect key="frame" x="0.0" y="0.0" width="20" height="20"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="20" id="Ibe-2h-X3a"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Men &amp; women" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gxn-cV-Mwb">
+                                        <rect key="frame" x="25" y="0.0" width="92" height="20"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="LDe-sL-UmM"/>
+                                </constraints>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="jjH-u3-Pro">
+                                <rect key="frame" x="10" y="155" width="103" height="20"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="birth_icon" translatesAutoresizingMaskIntoConstraints="NO" id="Vfe-lC-CYn">
+                                        <rect key="frame" x="0.0" y="0.0" width="20" height="20"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="20" id="Xe6-nt-7xJ"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="19-25 Years" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1NQ-ZA-OYZ">
+                                        <rect key="frame" x="25" y="0.0" width="78" height="20"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="ser-iW-MLa"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="LtA-1s-EAr" firstAttribute="top" secondItem="10V-ta-2Pe" secondAttribute="bottom" constant="15" id="77Q-AW-UhM"/>
+                            <constraint firstAttribute="bottom" secondItem="jjH-u3-Pro" secondAttribute="bottom" constant="15" id="7b0-qb-Vbr"/>
+                            <constraint firstItem="5ML-Pa-eHR" firstAttribute="leading" secondItem="KVZ-Hc-HTc" secondAttribute="leading" id="CaI-5n-7Ay"/>
+                            <constraint firstItem="LtA-1s-EAr" firstAttribute="leading" secondItem="KVZ-Hc-HTc" secondAttribute="leading" id="EmY-4S-TmH"/>
+                            <constraint firstItem="jjH-u3-Pro" firstAttribute="leading" secondItem="KVZ-Hc-HTc" secondAttribute="leading" id="KQI-1V-C5h"/>
+                            <constraint firstItem="5ML-Pa-eHR" firstAttribute="top" secondItem="KVZ-Hc-HTc" secondAttribute="bottom" constant="15" id="M3T-hw-51O"/>
+                            <constraint firstItem="10V-ta-2Pe" firstAttribute="leading" secondItem="KVZ-Hc-HTc" secondAttribute="leading" id="dWB-g2-kbG"/>
+                            <constraint firstItem="10V-ta-2Pe" firstAttribute="top" secondItem="5ML-Pa-eHR" secondAttribute="bottom" constant="15" id="eOk-ye-mdS"/>
+                            <constraint firstItem="KVZ-Hc-HTc" firstAttribute="top" secondItem="MQg-wD-gVg" secondAttribute="top" constant="15" id="kz7-Sn-eKy"/>
+                            <constraint firstItem="jjH-u3-Pro" firstAttribute="top" secondItem="LtA-1s-EAr" secondAttribute="bottom" constant="15" id="nMu-G3-Qe2"/>
+                            <constraint firstItem="KVZ-Hc-HTc" firstAttribute="leading" secondItem="MQg-wD-gVg" secondAttribute="leading" constant="10" id="r6U-2c-6IV"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="10"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.14999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="MQg-wD-gVg" secondAttribute="trailing" constant="15" id="01f-Ym-Xcl"/>
+                    <constraint firstAttribute="bottom" secondItem="MQg-wD-gVg" secondAttribute="bottom" id="DEB-fc-TwL"/>
+                    <constraint firstItem="MQg-wD-gVg" firstAttribute="top" secondItem="2DD-6v-KfS" secondAttribute="top" constant="20" id="NPW-A6-g2S"/>
+                    <constraint firstItem="MQg-wD-gVg" firstAttribute="leading" secondItem="2DD-6v-KfS" secondAttribute="leading" constant="15" id="hpO-eZ-JuE"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="lblEvAge" destination="1NQ-ZA-OYZ" id="e6r-5F-elf"/>
+                <outlet property="lblEvDate" destination="fmz-h9-lQl" id="cBZ-7m-Ly8"/>
+                <outlet property="lblEvGender" destination="Gxn-cV-Mwb" id="kFm-bQ-Hcg"/>
+                <outlet property="lblEvLanguage" destination="ndU-So-xTx" id="jEd-LP-7Tr"/>
+                <outlet property="lblEvTime" destination="fIe-ES-NUM" id="lCQ-lX-1iC"/>
+            </connections>
+            <point key="canvasLocation" x="136" y="44"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="birth_icon" width="32" height="32"/>
+        <image name="calender_icon" width="30" height="30"/>
+        <image name="color_clock_icon" width="32" height="32"/>
+        <image name="language_icon" width="32" height="32"/>
+        <image name="unisex_icon" width="32" height="32"/>
+    </resources>
+</document>
